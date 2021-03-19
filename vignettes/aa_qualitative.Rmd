@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(qualitative.data)
+library(data.qualitative)
 
 ```
 
@@ -25,10 +25,10 @@ Run following lines
 
 ```{r}
 
-devtools::install_github("RemiMahmoud/data.qualitative")
+# devtools::install_github("RemiMahmoud/data.qualitative")
 
 # Test
-data.qualitative::cereals
+# data.qualitative::cereals
 ```
 
 
