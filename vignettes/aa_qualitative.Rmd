@@ -36,7 +36,7 @@ data.qualitative::cereals
 # Update qualitative data 
 1.update files in folder `inst/extdata`
 2. `install and restart`
-3.execute function `read_plants()`
+3.execute function `read_plants()`or `read_metadata_quali()`
 4. `install and restart`
 ```{r}
 read_plants()
