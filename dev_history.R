@@ -1,4 +1,6 @@
 usethis::use_build_ignore("dev_history.R")
+usethis::use_build_ignore("data.qualitative.Rproj")
+
 # Document functions and dependencies
 attachment::att_to_description()
 # Check the package
