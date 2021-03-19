@@ -1,4 +1,4 @@
-Package: qualitative.data
+Package: data.qualitative
 Title: collects qualitative data sets
 Version: 0.0.0.9000
 Authors@R: 

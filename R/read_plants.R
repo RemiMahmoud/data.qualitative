@@ -13,7 +13,7 @@
 
 read_plants<- function(){
   path_legumes <- list.files(system.file("extdata/",
-                                         package = "qualitative.data"),
+                                         package = "data.qualitative"),
                              pattern = "Legumes_19012020.xlsx",
                              full.names = TRUE)
 
@@ -21,7 +21,7 @@ read_plants<- function(){
     mutate(across(vars_select_helpers$where(is.numeric), as.factor))
 
   path_cereals <- list.files(system.file("extdata/",
-                                         package = "qualitative.data"),
+                                         package = "data.qualitative"),
                              pattern = "cereales_25012020.xlsx",
                              full.names = TRUE)
 

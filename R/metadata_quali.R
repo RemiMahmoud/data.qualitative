@@ -14,7 +14,7 @@
 #' @description read data metadata_quali and allows you to obtain the scales of each variable
 read_metadata_quali<- function(){
   path_metadata_quali <- list.files(system.file("extdata/",
-                                         package = "qualitative.data"),
+                                         package = "data.qualitative"),
                              pattern = "Metadata_quali.xlsx",
                              full.names = TRUE)
   metadata_quali <- excel_sheets(path_metadata_quali) %>%
