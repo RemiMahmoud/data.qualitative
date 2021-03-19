@@ -17,3 +17,5 @@ usethis::use_r("data.R")
 usethis::use_r("metadata_quali.R")
 usethis::use_pipe()
 devtools::document()
+
+
