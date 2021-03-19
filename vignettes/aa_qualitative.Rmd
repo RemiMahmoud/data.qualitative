@@ -1,0 +1,33 @@
+---
+title: "aa_qualitative"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{aa_qualitative}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(qualitative.data)
+
+
+
+```
+
+# Update qualitative data 
+1.update files in folder `inst/extdata`
+2. `install and restart`
+3.execute function `read_plants()`
+4. `install and restart`
+```{r}
+read_plants()
+read_metadata_quali()
+```
+

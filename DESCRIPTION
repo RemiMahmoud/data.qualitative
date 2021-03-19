@@ -1,0 +1,30 @@
+Package: qualitative.data
+Title: collects qualitative data sets
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Clovis",
+           family = "Pontoizeau",
+           role = c("aut", "cre"),
+           email = "clovis.pontoizeau@inrae.fr",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: It enables the collection of qualitative data sets.
+License: GPL-3
+Depends: 
+    R (>= 2.10)
+Imports: 
+    dplyr,
+    magrittr,
+    purrr,
+    readxl,
+    rlang,
+    tidyselect,
+    usethis
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
