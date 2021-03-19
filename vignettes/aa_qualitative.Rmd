@@ -17,9 +17,21 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(qualitative.data)
 
-
-
 ```
+
+# Install package
+
+Run following lines
+
+```{r}
+
+devtools::install_github("RemiMahmoud/data.qualitative")
+
+# Test
+data.qualitative::cereals
+```
+
+
 
 # Update qualitative data 
 1.update files in folder `inst/extdata`
