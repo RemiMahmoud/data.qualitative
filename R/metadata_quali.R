@@ -19,7 +19,7 @@ read_metadata_quali<- function(){
                              full.names = TRUE)
   metadata_quali <- excel_sheets(path_metadata_quali) %>%
     rlang::set_names() %>%
-    purrr::map(.f=read_excel, path = path_metadata_quali)
+    purrr::map(.f=read_excel, path = path_metadata_quali, skip = 2)
 
   usethis::use_data(metadata_quali, overwrite = TRUE)
 
