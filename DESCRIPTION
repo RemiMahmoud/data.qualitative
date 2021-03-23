@@ -17,6 +17,7 @@ Imports:
     purrr,
     readxl,
     rlang,
+    stringr,
     tidyselect,
     usethis
 Suggests: 

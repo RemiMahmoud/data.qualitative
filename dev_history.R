@@ -19,3 +19,13 @@ usethis::use_pipe()
 devtools::document()
 
 
+# library(dplyr)
+# library(purrr)
+# library(rlang)
+# library(magrittr)
+# library(readxl)
+# library(tidyselect)
+# library(usethis)
+# library(devtools)
+# library(tidyr)
+# library(tidyverse)

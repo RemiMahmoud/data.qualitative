@@ -8,6 +8,8 @@
 #' @importFrom tidyselect vars_select_helpers
 #' @importFrom usethis use_data
 #' @importFrom magrittr %>%
+#' @importFrom stringr str_replace_all
+#' 
 #' @export
 #' @description read data legumes and cereals and transform numeric columns in factor
 
@@ -26,7 +28,16 @@ read_plants<- function(){
                              full.names = TRUE)
 
   cereals <-readxl::read_excel(path_cereals) %>%
-    mutate(across(vars_select_helpers$where(is.numeric), as.factor))
+    mutate(across(vars_select_helpers$where(is.numeric), as.factor)) %>% 
+    mutate(species = 
+             stringr::str_replace_all(species,
+                                              c("soft_wheat" = "wheat_aestivum",
+                                                "durum_wheat" = "wheat_turgidum")))
+  
   usethis::use_data(legumes, overwrite = TRUE)
   usethis::use_data(cereals, overwrite = TRUE)
-  }
+}
+
+
+
+
